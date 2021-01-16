@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko">  <!-- 언어 ko -->
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="./main.css">
+    <!-- head는 문서의 정보-->
+    <meta charset="UTF-8"> 
+    <!-- meta 태그는 닫히는 태그가 없는 빈태그 
+    charset 같은 거 사용할 수 있음. 먼저 meta charset부터 해야한다. 
+    UTF-8은 조합형(ㅊ ㅗ ㅣ ㅈ ㅗ ㅇ) EUC-KR은 완성형(최 종) -->
+    <meta name="author" content ="최종헌">
+    <meta name="description" content="최종헌사이트입니다.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title> <!-- 제목 -->
+    <base href="./css/"> <!-- base태그는 html중에서 하나만 사용이 가능합니다!-->
+    <link rel="stylesheet" href="main.css"> <!-- 외부 스타일 불러오기 --> 
+    <style>
+        div{
+            color:red;
+            background: yellow;
+        }
+        
+    </style>
 </head>
 <body>
+    <!-- body는 문서의 구조-->
     <div>안녕하세요!!</div>
     
     <span>안녕하세요</span>
-    
-
 </body>
 </html>
