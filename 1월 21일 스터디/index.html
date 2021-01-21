@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ol + li 
+    한세트다. 정렬된 목록-->
+    <!-- ol와 ul은 block 요소 li는 list-item요소-->
+    <!-- ul + li li는 기본적으로 블록요소
+    한세트다, 정렬되지 않은 목록
+    li는 단독으로 사용할 수 없다.-->
+
+    <ul>
+        <!-- li는 블록요소-->
+        <li>
+            Apple
+            <ul>
+                <li>Apple</li>
+                <li>Apple1</li>
+                <li>Apple2</li>
+            </ul>
+        </li>
+        <li>Apple2</li>
+        <li>Apple3</li>
+    </ul>
+
+    <ol>
+        <!-- ol는 블록요소
+        ol은 type을 설정할 수 있다.-->
+        <li value ="7">
+            Apple
+            <ul>
+                <li>Apple</li>
+                <li>Apple1</li>
+                <li>Apple2</li>
+            </ul>
+        </li>
+        <li>Apple2</li>
+        <li>Apple3</li>
+    </ol>
+    <ol type="A">
+        <!-- ol는 블록요소
+        ol은 type을 설정할 수 있다.-->
+        <li>
+            Apple
+            <ol type="a" reversed>
+                <li>Apple</li>
+                <li>Apple1</li>
+                <li>Apple2</li>
+            </ol>
+        </li>
+        <li>Apple2</li>
+        <li>Apple3</li>
+    </ol>
+
+    <dl>
+        <!-- 영역을 말함. key value방식으로 생각. -->
+        <dt>Coffee</dt><!-- dt는 용어를 말함. -->
+        <dd>맛있다아아아!!</dd><!-- dd는 정의를 말함. -->
+    </dl>
+
+    <!-- dl태그는 스타일링을 하기가 어렵다.-->
+
+    <ul>
+        <li>
+            <dfn>Coffee</dfn>
+            <p>맛있다아아아아아!</p>
+            <!-- p태그는 하나의 문단을 설정한다. 문장이나 문단을 설정할때 p태그를 사용할 수 있다. p태그도 block요소다. -->
+        </li>
+    </ul>
+    <!-- hr태그는 빈태그, 문단의 분리(주제에 의한)를 위해 설정. 수평선을 만든다. -->
+</body>
+
+</html>
