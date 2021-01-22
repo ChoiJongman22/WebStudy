@@ -1,0 +1,18 @@
+a {
+    font-weight: bold;
+    width: 100px;
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid black;/*윤곽선 1px 검은색으로 둘러싼다.*/
+    border-radius: 6px;/*모서리를 깎아주는 역할*/
+    display: block; /*inline요소에서 block으로 바꿔야 사용할 수 있는 것들이 있다.*/
+    text-align: center;
+}
+
+a:hover{/*마우스 갖다 댔을때 오렌지색으로*/
+    background: orange; 
+}
+
+h2{
+    padding-bottom: 1000px;
+}
