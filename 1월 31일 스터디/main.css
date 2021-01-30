@@ -1,0 +1,9 @@
+b{
+    font-weight: normal; /*볼드로 되어 있는 걸 노말로 바꿔준다*/
+}
+
+em{
+    font-style: normal; /*이탤릭체를 노말로 바꿔준다*/
+    font-weight: bold;
+    color: brown;
+}
