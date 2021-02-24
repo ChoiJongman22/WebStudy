@@ -1,0 +1,79 @@
+header{
+    background:tomato;
+    margin:10px;
+    padding:20px;
+}
+header nav{
+
+}
+header nav ul{
+    display:flex;
+}
+header nav ul li{
+    list-style: none; /* 점을 제거*/
+    margin:10px;
+}
+
+main{
+    display:flex;
+    background: blue;
+}
+
+section{
+    width:70%;
+    background:thistle;
+    margin:10px;
+    padding:10px;
+    box-sizing:border-box;
+}
+
+article{
+    background:yellowgreen;
+    margin-bottom:10px;
+    padding:10px;
+}
+
+aside{
+    width:30%;
+    background: tomato;
+    margin:10px;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+footer{
+    background:tomato;
+    margin:10px;
+    padding:20px;
+}
+footer address a{
+    display:block;
+}
+
+hr{
+    border:none;
+    border-top:2px dashed red;
+}
+a{
+    font-weight: bold;
+    width:100px;
+    line-height: 40px;
+    height:40px;
+    border:1px solid black;
+    border-radius:6px;
+    display:block;
+    text-align:center;
+}
+
+a:hover{
+    background:orange;
+}
+b{
+    font-weight: normal; /*볼드로 되어 있는 걸 노말로 바꿔준다*/
+}
+
+em{
+    font-style: normal; /*이탤릭체를 노말로 바꿔준다*/
+    font-weight: bold;
+    color: brown;
+}
