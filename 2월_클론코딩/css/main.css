@@ -12,6 +12,11 @@
     color: #333;
 }
 
+a{
+    text-decoration: none; /* 줄삭제*/
+    
+}
+
 /* BTN */
 .btn {
     height: 34px;
@@ -27,6 +32,7 @@
     cursor: pointer;
     box-sizing: boder-box;
     position: relative;
+    color:#333;
 }
 
 .btn:hover::before {
@@ -65,6 +71,19 @@
         0 0 5px rgba(81, 167, 232, 0.5);
 }
 
+/* FLOAT CLEARFIX */
+.clearfix::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+.float--left{
+    float:left;
+}
+.float--right{
+    float:right;
+}
+
 /* Vendor prefit(업체별 접두사) */
 .input--text::-webkit-input-placeholder {
     color: #cacaca;
@@ -79,3 +98,100 @@
 }
 
 /* 이상 1강~10강 내용정리 */
+
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+    background: #fff;
+
+}
+
+header .inner {
+    max-width: 980px;
+    height: 78px;
+    /* 가운데 정렬 max-width 있을 때 */
+    margin:0 auto;
+    
+}
+
+header .menu-group{
+    display:flex; /*수평정렬  */
+    align-items: center; /*수직 정렬*/
+    height:100%; /*78px 다가짐*/
+}
+
+header .logo{
+    margin-right:10px;
+}
+
+header .logo a{
+    background:url(../img/logo.svg);
+    width:32px;
+    height:32px;
+    display:block;
+    text-indent:-9999px; /*대체 텍스트 사용하기 명시적으로 9999 사용*/
+}
+
+header .logo a:hover{
+    /*hover는 가상 클래스 선택자*/
+    background:url(../img/logo_on.svg);
+}
+
+header .main-menu{
+    display:flex; 
+
+}
+header .main-menu li a{
+    display:block;
+    padding:10px; /* 마진을 준 것과 같은 효과를 줄 수 있다.*/
+    color:#3c4146;
+}
+
+header .main-menu li a:hover{
+    color:#4078c0;
+}
+
+header .sign-group{
+    display:flex;
+    align-items: center; /*수직 정렬*/
+    height:100%; /*78px 다가짐*/
+}
+
+header .btn-group{
+    order: 2;
+    display:flex;
+}
+
+header .btn-group .sign-in{
+    order: 2;
+    display:flex;
+    margin-right:4px;
+}
+#search-form{
+    order:1;
+    margin-right:12px;
+    /*id는 고유선택자이기 때문에 부모선택자 명시필요없음*/
+}
+#search{
+    width:160px;
+    font-size:14px;
+}
+#search + [type="submit"]{
+    display:none;
+}
+.sub-menu{
+    display:flex;
+    margin-right:10px;
+    
+}
+header .sub-menu li a{
+    padding:8px;
+    display:block;
+    font-size:13px;
+    color:#3c4146;  
+}
+
+header .sub-menu li a:hover{
+    color:#4078c0;  
+}
