@@ -104,7 +104,6 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.75);
     box-shadow: 0 0 5px rgba(0, 0, 0, .75);
     background: #fff;
-
 }
 
 header .inner {
@@ -112,13 +111,13 @@ header .inner {
     height: 78px;
     /* 가운데 정렬 max-width 있을 때 */
     margin:0 auto;
-    
 }
 
 header .menu-group{
     display:flex; /*수평정렬  */
     align-items: center; /*수직 정렬*/
     height:100%; /*78px 다가짐*/
+    
 }
 
 header .logo{
@@ -140,7 +139,6 @@ header .logo a:hover{
 
 header .main-menu{
     display:flex; 
-
 }
 header .main-menu li a{
     display:block;
