@@ -12,9 +12,10 @@
     color: #333;
 }
 
-a{
-    text-decoration: none; /* 줄삭제*/
-    
+a {
+    text-decoration: none;
+    /* 줄삭제*/
+
 }
 
 /* BTN */
@@ -32,7 +33,7 @@ a{
     cursor: pointer;
     box-sizing: boder-box;
     position: relative;
-    color:#333;
+    color: #333;
 }
 
 .btn:hover::before {
@@ -72,17 +73,53 @@ a{
 }
 
 /* FLOAT CLEARFIX */
-.clearfix::after{
-    content:"";
-    clear:both;
-    display:block;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
 }
-.float--left{
-    float:left;
+
+.float--left {
+    float: left;
 }
-.float--right{
-    float:right;
+
+.float--right {
+    float: right;
 }
+
+.summary {}
+
+.summary__title {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.summary__description {
+    font-size:26px;
+    font-weight: 300;
+    color:#767676;
+    line-height: 1.5; 
+    /* 행간 */
+}
+
+/* SECTION & INNER 정의 */
+.section {
+    position: relative;
+}
+
+.section .inner {
+    max-width: 980px;
+    margin: 0 auto;
+    /* 보더가 요소 들어간만큼 커지지 않도록 하기 위해서 */
+    box-sizing: border-box;
+    /* 포지션을 부모요소에서 확인해야하는경우 absolute이다. */
+    /* relative를 하게되면 포지션 타고올라가다가 걸리는 부분이 있도록 */
+    position: relative;
+
+}
+
 
 /* Vendor prefit(업체별 접두사) */
 .input--text::-webkit-input-placeholder {
@@ -107,89 +144,200 @@ header {
 }
 
 header .inner {
-    max-width: 980px;
     height: 78px;
     /* 가운데 정렬 max-width 있을 때 */
-    margin:0 auto;
 }
 
-header .menu-group{
-    display:flex; /*수평정렬  */
-    align-items: center; /*수직 정렬*/
-    height:100%; /*78px 다가짐*/
-    
+header .menu-group {
+    display: flex;
+    /*수평정렬  */
+    align-items: center;
+    /*수직 정렬*/
+    height: 100%;
+    /*78px 다가짐*/
+
 }
 
-header .logo{
-    margin-right:10px;
+header .logo {
+    margin-right: 10px;
 }
 
-header .logo a{
-    background:url(../img/logo.svg);
-    width:32px;
-    height:32px;
-    display:block;
-    text-indent:-9999px; /*대체 텍스트 사용하기 명시적으로 9999 사용*/
+header .logo a {
+    background: url(../img/logo.svg);
+    width: 32px;
+    height: 32px;
+    display: block;
+    text-indent: -9999px;
+    /*대체 텍스트 사용하기 명시적으로 9999 사용*/
 }
 
-header .logo a:hover{
+header .logo a:hover {
     /*hover는 가상 클래스 선택자*/
-    background:url(../img/logo_on.svg);
+    background: url(../img/logo_on.svg);
 }
 
-header .main-menu{
-    display:flex; 
-}
-header .main-menu li a{
-    display:block;
-    padding:10px; /* 마진을 준 것과 같은 효과를 줄 수 있다.*/
-    color:#3c4146;
+header .main-menu {
+    display: flex;
 }
 
-header .main-menu li a:hover{
-    color:#4078c0;
+header .main-menu li a {
+    display: block;
+    padding: 10px;
+    /* 마진을 준 것과 같은 효과를 줄 수 있다.*/
+    color: #3c4146;
 }
 
-header .sign-group{
-    display:flex;
-    align-items: center; /*수직 정렬*/
-    height:100%; /*78px 다가짐*/
+header .main-menu li a:hover {
+    color: #4078c0;
 }
 
-header .btn-group{
+/*이해*/
+
+header .sign-group {
+    display: flex;
+    align-items: center;
+    /*수직 정렬*/
+    height: 100%;
+    /*78px 다가짐*/
+}
+
+header .btn-group {
     order: 2;
-    display:flex;
+    display: flex;
 }
 
-header .btn-group .sign-in{
+header .btn-group .sign-in {
     order: 2;
-    display:flex;
-    margin-right:4px;
+    display: flex;
+    margin-right: 4px;
 }
-#search-form{
-    order:1;
-    margin-right:12px;
+
+#search-form {
+    order: 1;
+    margin-right: 12px;
     /*id는 고유선택자이기 때문에 부모선택자 명시필요없음*/
 }
-#search{
-    width:160px;
-    font-size:14px;
-}
-#search + [type="submit"]{
-    display:none;
-}
-.sub-menu{
-    display:flex;
-    margin-right:10px;
-    
-}
-header .sub-menu li a{
-    padding:8px;
-    display:block;
-    font-size:13px;
-    color:#3c4146;  
+
+/*이해*/
+#search {
+    width: 160px;
+    font-size: 14px;
 }
 
-header .sub-menu li a:hover{
-    color:#4078c0;  
+/*이해*/
+#search+[type="submit"] {
+    display: none;
+}
+
+/*이해*/
+.sub-menu {
+    display: flex;
+    margin-right: 10px;
+
+}
+
+/*이해*/
+header .sub-menu li a {
+    padding: 8px;
+    display: block;
+    font-size: 13px;
+    color: #3c4146;
+}
+
+/*이해*/
+
+header .sub-menu li a:hover {
+    color: #4078c0;
+}
+
+/*이해*/
+
+
+/* VISUAL */
+
+.section--visual {
+    background-image: url(../img/bg.jpg);
+    /* 배경이미지 반복적으로 나오지 않도록! */
+    background-repeat: no-repeat;
+    background-position: bottom-left;
+    /* 배경이미지가 줄이더라도 전체를 다 덮고 있도록 */
+    background-size:cover;
+}
+/* 가상선택자 */
+.section--visual::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    /* bottom:0 right:0을 주더라도 width, height 100% 준 것과 같은 효과 */
+    background:rgba(0,0,0,.3);
+}
+
+
+.section--visual .inner {
+    /* 내부여백사용 */
+    padding: 160px 0;
+    display:flex;
+
+}
+
+.section--visual .summary{
+    /* 가변하는 영역 */
+    flex-grow:1;
+    /* 쪼그라들도록 auto를 0으로 바꿔준다 */
+    flex-basis:0;
+    /* 위에 두가지를 하나로 바꿀수 있다. */
+    /* flex:1; */
+    margin-right:90px; 
+}
+
+.section--visual .summary__title{
+    color:#fff;
+    font-size:54px;
+    /* 글자의 그림자 넣기 값을 여러개 줄 수 있습니다! */
+    text-shadow: 0 1px 1px rgba(0,0,0,.25), 0 1px 25px rgba(0,0,0,.75); 
+}
+
+.section--visual .summary__description{
+    color:#fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25), 0 1px 25px rgba(0,0,0,.75); 
+    
+}
+
+#sign-form{
+    margin-top:16px;
+    width:340px;
+}
+
+#sign-form .input--text{
+    width:100%;
+    height:40px;
+
+}
+
+#sign-form li{
+    margin-bottom:17px;
+}
+
+#sign-form li:last-child{
+    margin-bottom:0;
+}
+
+#sign-form .caption{
+    font-size:12px;
+    margin-top:5px;
+    color:rgba(255,255,255,.6);
+    line-height: 1.5;
+    text-align:center;
+}
+
+#sign-form [type="submit"]{
+    width:100%;
+    height:62px;
+    padding:0 25px;
+    font-size:20px;
+    /* 수평 가운데 정렬 */
+    justify-content: center;
 }

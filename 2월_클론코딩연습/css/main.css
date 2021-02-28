@@ -3,13 +3,46 @@
 }
 a{
     text-decoration: none;
+    vertical-align: middle;
 }
+
+
+/* FLOAT CLEARFIX */
+.clearfix::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+.float--left{
+    float:left;
+}
+.float--right{
+    float:right;
+}
+
 
 /* BTN */
 .btn {
     height: 34px;
     background: #008528;
     border: 1px solid #008528;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-weight: 1.5;
+    cursor: pointer;
+    box-sizing: boder-box;
+    position: relative;
+    color:#333;
+}
+
+.btn2 {
+    height: 34px;
+    background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
+    border: 1px solid #d5d5d5;
+    border-radious: 4px;
     display: inline-flex;
     align-items: center;
     padding: 0 12px;
@@ -33,7 +66,6 @@ a{
     font-size: 16px;
 }
 header{
-    width:100%;
     height:53px;
     background:#00c73c;
 }
@@ -58,3 +90,77 @@ header .menu-group .logo-group a{
     color: #fff;
 }
 
+header .personal-group{
+    display:flex; /*수평정렬  */
+    align-items: center; /*수직 정렬*/
+    height:100%; /*78px 다가짐*/
+    
+}
+header .personal-group a{
+    color:#fff;
+    display:block;
+    margin-right: 20px;
+}
+
+#user{
+    background:url(../img/user.png);
+    width:24px;
+    height:24px;
+    display:block;
+    text-indent:-9999px;
+    
+}
+
+#bell{
+    background:url(../img/bell.png);
+    width:24px;
+    height:24px;
+    display:block;
+    text-indent:-9999px;
+}
+
+#message{
+    background:url(../img/email.png);
+    width:24px;
+    height:24px;
+    display:block;
+    text-indent:-9999px;
+}
+#services{
+    background:url(../img/email.png);
+    width:24px;
+    height:24px;
+    display:block;
+    text-indent:-9999px;
+}
+
+/*inner2*/
+
+header .inner2{
+    width: 1110px;
+    height:40px; /* 네이버 초록색*/
+    margin:0 auto;
+    color:#fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    background: #fff;
+}
+
+header .menu-group2{
+    display:flex; /*수평정렬  */
+    align-items: center; /*수직 정렬*/
+    height:100%; /*78px 다가짐*/
+    
+}
+
+header .menu-group2 a{
+    margin-right:10px;
+    color:#000;
+    font-size: 15px;
+}
+
+header .btn-group2{
+    display:flex; /*수평정렬  */
+    align-items: center; /*수직 정렬*/
+    height:100%; /*78px 다가짐*/
+    
+}
